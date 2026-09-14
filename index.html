@@ -18,268 +18,255 @@
     />
   </head>
   <body>
-    <!-- navbar -->
-
+    <!-- HEADER / NAVIGATION -->
     <header>
-      <nav class="navbar">
-        <a href="#" class="logo">
-          <!-- <img src="asset/LOGO-01.png" alt="Logo" /> -->
-          <span>Faisal Ali</span>
-        </a>
-
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li>
-            <a href="#Education & Certification">Education & Certification</a>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
+      <div class="nav-container" id="nav-container">
+        <div class="logo">FAISAL ALI</div>
+        <nav>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
         <div class="hamburger" id="hamburger">☰</div>
-      </nav>
+      </div>
     </header>
 
-    <div class="container">
-      <!-- HEADER -->
-      <section class="profile">
-        <img src="asset/photo profil.jpg" alt="Profile" />
-
-        <div class="profile-text">
-          <h1>Faisal Ali</h1>
-
-          <p class="job">Graphic Designer • 3D Modeler • Editor</p>
-
-          <a href="#" class="website"> Faisalali.site</a>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-
-      <section id="about">
-        <h3>About</h3>
-
-        <p>
-          Lulusan SMK Negeri 1 Samarinda jurusan Desain Komunikasi Visual dengan
-          pengalaman kerja dan magang di bidang pelayanan, media, dan desain.
-          Memiliki kemampuan belajar cepat, teliti, bertanggung jawab, mampu
-          bekerja secara individu maupun tim, serta memiliki semangat untuk
-          terus belajar dan berkembang.
-        </p>
-      </section>
-
-      <!-- skills -->
-
-      <section id="skills">
-        <h3>Skills</h3>
-
-        <ul>
-          <li>Desain Grafis (Adobe Ilustrator, Canva, Adobe Photoshop)</li>
-          <li>
-            Video Editing (Adobe Premiere, CapCut, Adobe After Effects dasar)
-          </li>
-          <li>3D Modeling (Blender)</li>
-          <li>Microsoft Word</li>
-          <li>Microsft excel</li>
-        </ul>
-      </section>
-
-      <!-- EXPERIENCE -->
-
-      <section id="experience">
-        <h3>Internship Experience</h3>
-
-        <div class="item">
-          <div class="year">2024 — 2025</div>
-
-          <div class="detail">
-            <h4>
-              PT Busam Media Digital
-              <span>- Fotografer, Editor, Desainer grafis, 3D desainer</span>
-            </h4>
-
-            <ul>
-              <li>Mendokumentasikan kegiatan dan acara menggunakan kamera.</li>
-              <li>Melakukan editing video podcast dan video highlight.</li>
-              <li>
-                Membuat desain grafis seperti logo dan kebutuhan visual lainnya.
-              </li>
-              <li>Membuat visual 3D untuk kebutuhan acara.</li>
-              <li>
-                Mengoperasikan Adobe Illustrator, Adobe Premiere Pro, dan
-                Blender.
-              </li>
-            </ul>
+    <!-- HERO SECTION -->
+    <section class="hero section" id="home" data-theme="dark">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h3>👋Hallo semua!</h3>
+          <h1>Saya Faisal Ali</h1>
+          <div class="badge">3D Generalist • Editor • Graphic Designer</div>
+          <p>
+            Hanya seorang yang hobi membuat seni digital mengolah ide menjadi
+            gambar, video, dan objek 3D.
+          </p>
+          <div>
+            <a href="#contact" class="btn btn-primary">Contact saya</a>
+            <a href="#work" class="btn btn-secondary">Lihat Karya saya</a>
           </div>
         </div>
-      </section>
-
-      <section id="experience">
-        <h3>Work Experience</h3>
-
-        <div class="item">
-          <div class="year">2025 — 2026</div>
-
-          <div class="detail">
-            <h4>PT Cipta Sumina Indah Satresna <span>- Kasir Parkir</span></h4>
-
-            <ul>
-              <li>Mengoprasikan mesin kasir atau komputer pos parkir.</li>
-              <li>
-                Melakukan transaksi pembayaran parkir dengan non tunai
-                menggunakan mesin EDC.
-              </li>
-              <li>
-                Memasukkan dan memeriksa nomor plat kendaraan pada sistem
-                parkir.
-              </li>
-              <li>
-                Memberikan pelayanan yang ramah dan membantu pelanggan dalam
-                proses pembayaran.
-              </li>
-            </ul>
+        <div class="hero-image">
+          <div class="image-stage">
+            <div class="back-box"></div>
+            <img src="asset/foto hero.png" class="image-placeholder" />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- project -->
+    <!-- YANG SAYA LAKUKAN SECTION -->
+    <section class="what-i-do section" data-theme="light">
+      <div class="container">
+        <h2 class="section-title">Yang Saya Lakukan</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="asset/what i do-01.jpg" class="image-placeholder" />
+            <h3>3D Generalist</h3>
+            <p>
+              Suka bereksperimen membuat objek dan karakter 3D di Blender. Dari
+              yang berawal cuma iseng nyoba-nyoba tutorial, sekarang jadi hobi
+              bikin aset visual.
+            </p>
+          </div>
+          <div class="service-card">
+            <img src="asset/what i do-02.jpg" class="image-placeholder" />
+            <h3>Editing video</h3>
+            <p>
+              Bereksperimen dengan potongan footage, sound design, dan efek
+              visual menggunakan Premiere Pro, After Effects, atau CapCut untuk
+              menghasilkan Video.
+            </p>
+          </div>
+          <div class="service-card">
+            <img src="asset/what i do-03.jpg" class="image-placeholder" />
+            <h3>Design</h3>
+            <p>
+              Menyalurkan ide visual lewat pembuatan logo, poster, dan tata
+              letak grafis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section id="projects">
-        <h3>Project</h3>
+    <!-- TENTANG SAYA SECTION -->
+    <section class="about-me section" id="about" data-theme="dark">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img
+            src="asset/about me foto.jfif"
+            class="image-placeholder"
+            style="height: 350px"
+          />
+        </div>
+        <div class="about-text">
+          <h2>Tentang Saya</h2>
+          <p>
+            Saya alumni SMK Negeri 1 Samarinda jurusan Desain Komunikasi Visual
+            (DKV). Punya ketertarikan besar di dunia visual digital, saya senang
+            mengisi waktu luang dengan belajar 3D modeling, ngedit video,
+            desain, hingga coding.
+          </p>
+          <ul class="about-list">
+            <li>Pendidikan dan Sertifikasi :</li>
+            <li>
+              <img
+                src="asset/logo smk-01.svg"
+                class="logo-smk"
+                alt="Logo SMKN 1 Samarinda"
+              />
+              SMK Negeri 1 Samarinda
+            </li>
 
-        <div class="project-card">
-          <div class="gallery">
+            <li>BNSP (2025) - (Junior Operator Desain Grafis).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio section" id="work" data-theme="light">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
             <a
               href="https://www.instagram.com/reels/DErg5C8PWBK/"
               target="_blank"
-              ><img src="asset/thumbnail-01.jpg" alt="" />
+              ><img src="asset/thumbnail-01.jpg" class="image-placeholder" />
             </a>
-            <div>
-              <h4>
-                <a
-                  href="https://www.instagram.com/reels/DErg5C8PWBK/"
-                  target="_blank"
-                  >Editing video↗</a
-                >
-              </h4>
-              <p>
-                Membuat video berita kabakaran. Di edit menggunakan software
-                adobe premiere pro
-              </p>
-            </div>
+            <h3>Editing Video</h3>
           </div>
-          <div class="gallery">
+          <div class="portfolio-card">
             <a
               href="https://www.instagram.com/reel/C8Tu27dPi4O/"
               target="_blank"
-              ><img src="asset/thumbnail-02.jpg" alt="" />
+              ><img src="asset/thumbnail-02.jpg" class="image-placeholder" />
             </a>
-            <div>
-              <h4>
-                <a
-                  href="https://www.instagram.com/reel/C8Tu27dPi4O/"
-                  target="_blank"
-                  >Editing video↗</a
-                >
-              </h4>
-              <p>
-                Video tentang pengenalan ekskul yang ada di SMK 1 Samarinda.
-                Diedit menggunakan software adobe premiere pro
-              </p>
-            </div>
+            <h3>Editing VIdeo</h3>
           </div>
-          <div class="gallery">
-            <a
-              href="https://www.tiktok.com/@quick_tutor/video/7376219747681094917?is_from_webapp=1&sender_device=pc&web_id=7673093688159684097"
-              target="_blank"
-              ><img src="asset/thumbnail-04.jpg" alt="" />
-            </a>
-            <div>
-              <h4>
-                <a
-                  href="https://www.tiktok.com/@quick_tutor/video/7376219747681094917?is_from_webapp=1&sender_device=pc&web_id=7673093688159684097"
-                  target="_blank"
-                  >3D Animation↗</a
-                >
-              </h4>
-              <p>
-                Video ini adalah project akhir semester sekolah. Di buat
-                menggunakan software blender dan adobe after effect.
-              </p>
-            </div>
-          </div>
-          <div class="gallery">
+          <div class="portfolio-card">
             <a
               href="https://www.tiktok.com/@quick_tutor/video/7339896440157768967?is_from_webapp=1&sender_device=pc&web_id=7673093688159684097"
               target="_blank"
-              ><img src="asset/thumbnail-03.jpg" alt="" />
+              ><img src="asset/thumbnail-03.jpg" class="image-placeholder" />
             </a>
-            <div>
-              <h4>
-                <a
-                  href="https://www.tiktok.com/@quick_tutor/video/7339896440157768967?is_from_webapp=1&sender_device=pc&web_id=7673093688159684097"
-                  target="_blank"
-                  >3D Animation↗</a
-                >
-              </h4>
-              <p>
-                Video ini adalah project pribadi. Di buat menggunakan software
-                blender dan adobe after effect.
-              </p>
-            </div>
+            <h3>Animasi 3D</h3>
+          </div>
+          <div class="portfolio-card">
+            <a
+              href="https://www.tiktok.com/@quick_tutor/video/7376219747681094917?is_from_webapp=1&sender_device=pc&web_id=7673093688159684097"
+              target="_blank"
+              ><img src="asset/thumbnail-04.jpg" class="image-placeholder" />
+              <h3>Animasi 3D</h3>
+            </a>
           </div>
         </div>
-      </section>
+        <div class="center-btn">
+          <a href="#" class="btn btn-primary">Lihat Karya Saya</a>
+        </div>
+      </div>
+    </section>
 
-      <!-- education -->
-      <section id="Education & Certification">
-        <div class="education">
-          <h3>Education & Certification</h3>
+    <!-- SKILLS SECTION -->
+    <section class="skills section" data-theme="light">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="asset/logo blnder.svg" class="skill-logo" />
+            <h4>3D Generalist</h4>
+            <p>BLENDER</p>
+          </div>
+          <div class="skill-card">
+            <img src="asset/logo premiere pro.svg" class="skill-logo" />
+            <img src="asset/logo after effect.svg" class="skill-logo" />
+            <img src="asset/logo capcut.svg" class="skill-logo" />
+            <h4>Editing Video</h4>
+            <p>ADOBE PREMIERE PRO | ADOBE AFTER EFFECT | CAPCUT</p>
+          </div>
+          <div class="skill-card">
+            <img src="asset/logo illustrator.svg" class="skill-logo" />
+            <img src="asset/logo photoshop.svg" class="skill-logo" />
+            <img src="asset/logo canva.svg" class="skill-logo" />
+            <h4>Design</h4>
+            <p>ADOBE ILLUSTRATOR | ADOBE PHOTOSHOP | CANVA</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- PENGALAMAN KERJA SECTION -->
+    <section class="pengalaman section">
+      <h2 class="section-title">Pengalaman</h2>
+      <div class="container pengalaman-grid">
+        <div class="pengalaman-item">
+          <h2>
+            PT BUSAM MEDIA DIGITAL -
+            <span>
+              Fotografer, Editor, Desainer grafis, 3D Desainer (Magang)</span
+            >
+          </h2>
+          <p>(23 September 2024 – 31 Januari 2025)</p>
           <ul>
+            <li>Mendokumentasikan kegiatan dan acara menggunakan kamera.</li>
+            <li>Melakukan editing video podcast dan video highlight.</li>
             <li>
-              SMK Negeri 1 Samarinda —
-              <span>(Jurusan, Desain Komunikasi Visual)</span>
+              Membuat desain grafis seperti logo dan kebutuhan visual lainnya.
             </li>
-            <p>(2022 — 2025)</p>
-            <li>BNSP — <span>(Junior Operator Desain Grafis)</span></li>
-            <p>(2025)</p>
+            <li>Membuat visual 3D untuk kebutuhan acara.</li>
+            <li>
+              Mengoperasikan Adobe Illustrator, Adobe Premiere Pro, dan Blender.
+            </li>
           </ul>
-          <p></p>
         </div>
-      </section>
-
-      <!-- contact -->
-
-      <section id="contact">
-        <div class="contact-detail">
-          <h3>Contact</h3>
+        <div class="pengalaman-item">
+          <h2>PT CIPTA SUMINA INDAH SATRESNA - <span>Kasir Parkir</span></h2>
+          <p>(20 November 2025 – 07 Agustus 2026)</p>
+          <ul>
+            <li>Mengoprasikan mesin kasir atau komputer pos parkir</li>
+            <li>
+              Melakukan transaksi pembayaran parkir dengan non tunai menggunakan
+              mesin EDC.
+            </li>
+            <li>
+              Memasukkan dan memeriksa nomor plat kendaraan pada sistem parkir.
+            </li>
+            <li>
+              Memberikan pelayanan yang ramah dan membantu pelanggan dalam
+              proses pembayaran.
+            </li>
+          </ul>
         </div>
-        <div class="contact-list">
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=f.faisal0920@gmail.com"
-            class="contact-item"
-            target="_blank"
-          >
-            <img src="asset/gmaillogo.svg" />
-            <span>Email</span>
-          </a>
+      </div>
+    </section>
 
-          <a href="https://wa.me" class="contact-item" target="_blank">
-            <img src="asset/whatsapp-svgrepo-com.svg" />
-            <span>WhatsApp</span></a
-          >
+    <!-- FOOTER -->
+    <footer id="contact">
+      <div class="container footer-grid">
+        <div class="footer-left">
+          <h3>FAISAL ALI</h3>
+          <div class="badge">3D Generalist • Editor • Graphic Designer</div>
+          <p>&copy; 2026 FAISAL ALI. ALL RIGHTS RESERVED.</p>
         </div>
-      </section>
-    </div>
-
-    <!-- footer -->
-
-    <div class="footer">
-      <p>© 2026 Faisal Ali</p>
-    </div>
+        <div class="footer-right">
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> f.faisal0920@gmail.com</li>
+            <li>
+              <i class="fa-solid fa-briefcase"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-pinterest"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <!-- Java script -->
     <script src="script.js"></script>
