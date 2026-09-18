@@ -347,6 +347,19 @@ nav ul li a:hover {
   width: 50px;
 }
 
+.about-me .image-stage .back-box {
+  bottom: -20px;
+  left: -20px;
+}
+
+.about-me .image-stage:hover .image-placeholder {
+  transform: translate(8px, -8px) scale(1.03);
+}
+
+.about-me .image-stage:hover .back-box {
+  transform: translate(-12px, 12px);
+}
+
 /* --- PORTFOLIO --- */
 .portfolio {
   padding: 60px 0;
@@ -432,7 +445,7 @@ nav ul li a:hover {
   line-height: 1.4;
 }
 
-/* --- pengalaman kerja --- */
+/* --- WORK EXPERIENCE --- */
 .pengalaman {
   padding: 60px 0;
   background-color: #f9f9f9;
@@ -524,7 +537,12 @@ footer {
   margin-right: -25px;
 }
 
-/* --- RESPONSIVE DESIGN (MEDIA QUERIES) --- */
+.footer-right img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* --- RESPONSIVE (MEDIA QUERIES) --- */
 @media (max-width: 900px) {
   .services-grid,
   .skills-grid {
