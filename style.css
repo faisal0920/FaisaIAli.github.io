@@ -347,6 +347,13 @@ nav ul li a:hover {
   width: 50px;
 }
 
+.about-image {
+  /* display: flex; */
+  align-items: center;
+  justify-items: center;
+  padding: 30px;
+}
+
 .about-me .image-stage .back-box {
   bottom: -20px;
   left: -20px;
@@ -443,44 +450,6 @@ nav ul li a:hover {
   color: #777;
   text-transform: uppercase;
   line-height: 1.4;
-}
-
-/* --- WORK EXPERIENCE --- */
-.pengalaman {
-  padding: 60px 0;
-  background-color: #f9f9f9;
-}
-
-.pengalaman-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: var(--primary);
-  background-color: var(--third);
-  font-size: 10px;
-  justify-content: center;
-}
-
-.pengalaman-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.pengalaman-item ul {
-  list-style-position: inside;
-  padding: 0;
-  margin-top: 15px;
-}
-
-.pengalaman-item h2 {
-  text-align: center;
-  font-size: 13px;
-}
-
-span {
-  color: #888;
-  font-size: 11px;
-  font-style: italic;
 }
 
 /* --- FOOTER --- */
@@ -642,10 +611,8 @@ footer {
     color: var(--third);
   }
 
-  .pengalaman-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .about-image {
+    justify-items: center;
   }
 
   .footer-grid {
@@ -662,11 +629,5 @@ footer {
   .services-grid,
   .skills-grid {
     grid-template-columns: 1fr;
-  }
-
-  .cta-banner .btn {
-    display: block;
-    width: 100%;
-    margin: 10px 0 0 0;
   }
 }
