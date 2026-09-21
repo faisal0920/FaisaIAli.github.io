@@ -107,10 +107,24 @@ nav ul li a {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--primary);
+  position: relative;
+  display: inline-block;
 }
 
-nav ul li a:hover {
-  color: var(--secondary);
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 2px;
+  background: var(--secondary);
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 30px;
 }
 
 .hamburger {
@@ -120,9 +134,17 @@ nav ul li a:hover {
 /* --- VARIASI TEMA NAVBAR --- */
 
 #nav-container.nav-light {
-  background-color: var(--third);
+  background-color: var(--secondary);
   color: var(--primary);
   border-bottom: 1px solid var(--primary);
+}
+
+#nav-container.nav-light nav ul li a:hover {
+  color: var(--third);
+}
+
+#nav-container.nav-light nav ul li a:hover::after {
+  background-color: var(--third);
 }
 
 #nav-container.nav-dark {
@@ -130,6 +152,7 @@ nav ul li a:hover {
   color: var(--third);
   border-bottom: 1px solid var(--third);
 }
+
 #nav-container.nav-dark .logo {
   color: var(--secondary);
 }
@@ -597,8 +620,9 @@ footer {
 
   #nav-container.nav-light nav ul {
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.08);
-    background-color: var(--third);
+    background-color: var(--secondary);
     color: var(--primary);
+    border-bottom: 1px solid var(--primary);
   }
 
   #nav-container.nav-dark nav ul {
