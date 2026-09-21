@@ -46,3 +46,23 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach((section) => {
   observer.observe(section);
 });
+
+
+// Menonaktifkan klik kanan
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
+
+// Menonaktifkan tombol F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+document.addEventListener("keydown", function (e) {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey &&
+      e.shiftKey &&
+      (e.key === "I" || e.key === "J" || e.key === "C")) ||
+    (e.ctrlKey && e.key === "U")
+  ) {
+    e.preventDefault();
+    alert("Inspeksi elemen dinonaktifkan!");
+  }
+});
